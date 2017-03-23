@@ -1,5 +1,5 @@
-title:            哈哈哈哈哈
-description:      Describe your website here.
+title:            后生儿的博客
+description:      欢喜快活多短暂，忧愁烦恼是一生
 disqus_shortname: 
 reading_time:     true
 words_per_minute: 200
@@ -9,10 +9,10 @@ url:
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           邹永泽
   avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good sentence or two should suffice."
-  email:          you@email.com
+  bio:            "人如果没有梦想，跟咸鱼有什么区别."
+  email:          zfq0714@qq.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
   facebook:       
@@ -35,7 +35,7 @@ google_verify:
 bing_verify:         
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    China/Bei_Jing
 future:      false  # publish future dated posts --  true, false (default) 
 highlighter: rouge
 markdown:    kramdown
