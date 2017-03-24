@@ -13,89 +13,28 @@ image:
   <a href="{{ site.url }}/images/thai/1.png"><img src="{{ site.url }}/images/thai/1.png" alt=""></a>
 </figure>
 
-### GFM Code Blocks
+### 第1天（3.30号）：
+* 晚上10点左右从杭州出发前往泰国曼谷；
 
-GitHub Flavored Markdown [fenced code blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks/) are supported. To modify styling and highlight colors edit `/_sass/syntax.scss`.
+### 第2天( 3.31号)：
+* 预定了酒店接送车（美憬阁索菲特曼谷VIE酒店），大约早上3点左右到酒店睡觉；12点要退房。
 
-```css
-#container {
-  float: left;
-  margin: 0 -240px 0 0;
-  width: 100%;
-}
-```
+`路线分两种，如果很累，曼谷附近逛下，就直接去芭堤雅；否则选择一个景点（3个路线），傍晚再去芭堤雅；`
 
-{% highlight scss %}
-.highlight {
-  margin: 0;
-  padding: 1em;
-  font-family: $monospace;
-  font-size: $type-size-7;
-  line-height: 1.8;
-}
-{% endhighlight %}
+- A线(附近逛一下)：
 
-```html
-{% raw %}<nav class="pagination" role="navigation">
-  {% if page.previous %}
-    <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous article</a>
-  {% endif %}
-  {% if page.next %}
-    <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next article</a>
-  {% endif %}
-</nav><!-- /.pagination -->{% endraw %}
-```
+* (1)睡醒酒店自助早餐，饭后看下酒店的游泳池；门口左拐前往【素坤逸商业区】及【暹罗广场】自由活动，素坤逸大街沿线有很多的购物商圈，起点是centralworld，大名鼎鼎的暹罗广场位于这里，暹罗广场是泰国曼谷的一家有名的购物娱乐商场，堪比美日本新宿区，在此之内有不少名店。（走马光花的看下街边，也可以去特定的店里购物）
+* (2)膜拜泰国曼谷的【港星潮拜-四面佛】，是泰国香火鼎盛的膜拜据点之一，深受港台明星的追捧。
 
-{% highlight html linenos %}
-{% raw %}<nav class="pagination" role="navigation">
-  {% if page.previous %}
-    <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous article</a>
-  {% endif %}
-  {% if page.next %}
-    <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next article</a>
-  {% endif %}
-</nav><!-- /.pagination -->{% endraw %}
-{% endhighlight %}
+<figure>
+  <a href="{{ site.url }}/images/thai/2.png"><img src="{{ site.url }}/images/thai/2.png" alt=""></a>
+</figure>
 
-```ruby
-module Jekyll
-  class TagIndex < Page
-    def initialize(site, base, dir, tag)
-      @site = site
-      @base = base
-      @dir = dir
-      @name = 'index.html'
-      self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), 'tag_index.html')
-      self.data['tag'] = tag
-      tag_title_prefix = site.config['tag_title_prefix'] || 'Tagged: '
-      tag_title_suffix = site.config['tag_title_suffix'] || '&#8211;'
-      self.data['title'] = "#{tag_title_prefix}#{tag}"
-      self.data['description'] = "An archive of posts tagged #{tag}."
-    end
-  end
-end
-```
+- B线1号：暹罗海洋世界
+* 酒店旁边有暹罗海洋世界，东南亚最大的水族馆（大概90元）。
 
-### Code Blocks in Lists
+- B线2号：拜约克摩天塔
+* 酒店右拐王权免税店，逛下免税店后，去拜约克摩天塔（泰国最高的建筑物，可以看曼谷景）
 
-Indentation matters. Be sure the indent of the code block aligns with the first non-space character after the list item marker (e.g., `1.`). Usually this will mean indenting 3 spaces instead of 4.
 
-1. Do step 1.
-2. Now do this:
-   
-   ```ruby
-   def print_hi(name)
-     puts "Hi, #{name}"
-   end
-   print_hi('Tom')
-   #=> prints 'Hi, Tom' to STDOUT.
-   ```
-        
-3. Now you can do this.
 
-### GitHub Gist Embed
-
-An example of a Gist embed below.
-
-{% gist mmistakes/6589546 %}
