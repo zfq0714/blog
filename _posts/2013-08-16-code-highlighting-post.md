@@ -161,9 +161,12 @@ image:
 
 ## 第5天(4.3号)：
 · 早餐自助过后，海边玩玩，出发回曼谷   
-芭提雅到曼谷：芭提雅有两个Bus Terminal有车往泰国曼谷   
-大的在North Pattaya Road上，称作Air Conditioned Bus Terminal to Bangkok（谷歌定位：Air Conditioned Bus Terminal，在North Pattaya Road上），这里每天5:00～21:00有空调大巴发往曼谷汽车东站(Ekamai)和汽车北站(Mo chit)。还有车发往曼谷新机场 (Suvarnabhumi Airport)，发车时间是6:00 9:00 11:00 13:00 15:00 17:00 19:00，票价150B，车程两个小时足够。    
-在Jomiten还有个小的Bus Station，在Jomtiem Beach和Chaiya Phruek Rd路口，那里有一个Police Box和Tourist Information Center。汽车站很不起眼，没有停车场，是路边停的，有车发往曼谷市内和机场，车次应该不多。只记下了发往机场的时间是9:00 11:00 13:00 17:00，票价是106B，估计不是空调的。如果住在Jomiten，就没必要跑到Pattaya那边去坐车了。    
+芭提雅到曼谷：芭提雅有两个Bus Terminal有车往泰国曼谷  
+
+大的在North Pattaya Road上，称作Air Conditioned Bus Terminal to Bangkok（谷歌定位：Air Conditioned Bus Terminal，在North Pattaya Road上），这里每天5:00～21:00有空调大巴发往曼谷汽车东站(Ekamai)和汽车北站(Mo chit)。还有车发往曼谷新机场 (Suvarnabhumi Airport)，发车时间是6:00 9:00 11:00 13:00 15:00 17:00 19:00，票价150B，车程两个小时足够。   
+
+在Jomiten还有个小的Bus Station，在Jomtiem Beach和Chaiya Phruek Rd路口，那里有一个Police Box和Tourist Information Center。汽车站很不起眼，没有停车场，是路边停的，有车发往曼谷市内和机场，车次应该不多。只记下了发往机场的时间是9:00 11:00 13:00 17:00，票价是106B，估计不是空调的。如果住在Jomiten，就没必要跑到Pattaya那边去坐车了。   
+
 如果是Taxi，一般报价800B，private car和mini bus要1000～1200吧，均不含Toll Fee，没尝试，因为感觉坐大巴挺方便的。如果提前买的车票，一般发车前10分钟到车站即可，里面有个带空调的候车室的。而且坐车的人很少，一般也就两个小时到达曼谷。   
 
 ### 路线分两种，可以去沙美岛Koh Samet，也可以去可兰岛
@@ -188,6 +191,7 @@ image:
 · 圣玫瑰堂建于1786年，是泰国首都曼谷的一座天主教教堂（选择2号线就去摩天轮吃晚饭）
 · 圣母升天大教堂 Assumption Cathedral 是一座罗马式砖砌建筑，1910年在一个早期教堂遗址上建造的
 教堂圆花窗的两侧是一对塔楼。洛可可风格的室内装修十分华美，其最主要的装饰就是高档的蓝色筒拱天花板，天花板上搭配有金色的星星图案。内部不能拍照。绕到 东亚公司大厦 的后面，就是教堂，对面是一个绿树成荫的步行广场，广场上还有几座欧洲风格的建筑。其中包括 现代圣母升天大学 Assumption College、Assumption Convent、新古典天主无教传教所、背靠河边的文艺复兴式的天主教中心。学校有学生在放学。最后面可以看到 香格里拉酒店。
+
 · 扬纳瓦寺院，据说造型的来由是拉玛三世看到欧洲列国在湄南河逆流而上的大型现代船队之后，对自己国家船舶界的将来产生了恐惧感，于是下令修建了这一独特造型的寺院，用来纪念将在暹罗（泰国的旧称）王国绝迹的平底帆船。
 
 <figure>
