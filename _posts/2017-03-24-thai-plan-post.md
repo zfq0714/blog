@@ -4,8 +4,6 @@ title: 泰国出游计划
 description: "清明时节自由游泰国"
 modified: 2016-06-01T15:27:45-04:00
 tags: [旅游,泰国]
-image:
-  feature: abstract-10.jpg
 ---
 ## 时间安排
 
