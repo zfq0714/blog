@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 坦白书
-description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
+description: "---马良《坦白书》"
 modified: 2014-12-24
 tags: [简书]
 ---
