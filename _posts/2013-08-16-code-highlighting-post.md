@@ -1,18 +1,17 @@
 ---
 layout: post
-title: Syntax Highlighting Post
-description: "Demo post displaying the various ways of highlighting code in Markdown."
+title: 泰国出游计划
+description: "清明时节自由游泰国"
 modified: 2016-06-01T15:27:45-04:00
-tags: [sample post, code, highlighting]
+tags: [旅游,泰国]
 image:
   feature: abstract-10.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
 ---
+### 时间安排
 
-Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.[^1]
-
-[^1]: <http://en.wikipedia.org/wiki/Syntax_highlighting>
+<figure>
+  <a href="{{ site.url }}/images/thai/1.png"><img src="{{ site.url }}/images/thai/1.png" alt=""></a>
+</figure>
 
 ### GFM Code Blocks
 
