@@ -87,7 +87,7 @@ image:
 这里有泰国各地名胜的缩影，近百种历史文化建筑，还有一些国外名胜建筑，园中有80个景点，展示泰国众多著名的文化和历史建筑物，展出了百余座小型建筑物，包括泰国地形和自然环境，包括高山、河流、瀑布、铁路，及全国72府名胜古迹。与实物比例为1:25，园中还有一些其他国家的名胜小型建筑物，如法国埃菲尔铁塔和凯旋门、意大利比萨斜塔、罗马斗兽场、美国自由女神像、德国科隆大教堂等。
 
 <figure>
-  <a href="https://travelitem.taobao.com/item.htm?id=35650809857&spm=a230r.1.14.36.OeAL5X&ns=1&abbucket=12#detail">
+  <a href="https://travelitem.taobao.com/item.htm?id=35650809857&spm=a230r.1.14.36.OeAL5X&ns=1&abbucket=12#detail" target="blank">
   <span>查看详情</span></a>
 </figure>
 
@@ -121,7 +121,8 @@ image:
 ### 晚餐推荐：
 · 芭提雅餐馆大多位于繁华的芭提雅二路和海滨路上，在这些地方，你能品尝到各国美食以及肥美多汁的海鲜大餐。尤为推荐在海滨路上择取餐馆用餐，因为你能一边饕餮，一边吹吹海风欣赏美丽日落，满眼都是大型鱼池里的生猛海鲜。在芭提雅也有很多海鲜餐厅提供中文服务以及中文配图菜单，价格也稍贵。
 
-## 第4天(4.2号)：
+## 第4天(4.2号)： 
+
 ### 路线分两种，可以去沙美岛Koh Samet，也可以去可兰岛；
 
 ### A线：沙美岛
@@ -150,7 +151,7 @@ image:
 · 格兰岛又称可兰岛、珊瑚岛或者金沙岛，在这里可以饱览海底奇景，海水清澈，礁石、小鱼、海蜇等等尽收眼底；水上娱乐项目繁多，游客可选择新鲜刺激的海上降落伞项目、体验潜水等项目。（萨岛在可兰岛附近）
 
 <figure>
-  <a href="https://lmlxhwd.alitrip.com/category-1252378360.htm?spm=a1z10.5-b-s.w401114856052064.36.cm7dAH&search=y&catName=%BB%A8%D1%F9%CC%A9%B9%FA&scene=taobao_shop#TmshopSrchNav">
+  <a href="https://lmlxhwd.alitrip.com/category-1252378360.htm?spm=a1z10.5-b-s.w401114856052064.36.cm7dAH&search=y&catName=%BB%A8%D1%F9%CC%A9%B9%FA&scene=taobao_shop#TmshopSrchNav" target="blank">
   <span>查看详情</span></a>
 </figure>
 
