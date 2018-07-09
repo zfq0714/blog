@@ -242,7 +242,7 @@ function finish() {
     $(".tip").css({
         "opacity": "1"
     });
-    $(".tip").html("手速：<span></span>"+(speed/1000/count).toFixed(2) + "s");
+    $(".tip").html("平均手速：<span>"+(speed/1000/count).toFixed(2) + "s</span>(0.3s以上都视为手残)");
     setTimeout(function() {
         init();
     }, 2000)
