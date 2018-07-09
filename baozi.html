@@ -155,7 +155,7 @@ $(function(){
     var count = 0;
     var speed = 0;
     init();
-    document.onkeydown = keyDown;
+    
 })
 
 //初始化
@@ -171,8 +171,9 @@ function init() {
         $(".count span").text(num--);
         if (num == -1) {
             clearInterval(int);
+            document.onkeydown = keyDown;
             count = 0;
-            speed = 0;
+            speed = new Date().getTime();
             $(".count").hide();
             randomLetter();
             $(".progress .tarbar").width("100%");
@@ -187,7 +188,7 @@ function randomLetter() {
         "letters": []
     };
     var pool = ['Q', 'W', 'E', 'R', 'A', 'S', 'D']; //可选字母
-    var range = Math.floor(Math.random() * (7 - 2 + 1) + 2); //2-7之间
+    var range = Math.floor(Math.random() * (9 - 3 + 1) + 3); //3-9之间
     for (var i = 0; i < range; i++) {
         data.letters.push(pool[Math.floor(Math.random() * pool.length)]);
     }
@@ -202,6 +203,7 @@ function progress() {
         //失败
         $(".tip").css({"opacity":"1"});
         $(".tip").html("骚年,手速不够啊");
+        document.onkeydown = ""; 
         setTimeout(function(){
             init();
         },2000);
@@ -214,9 +216,6 @@ function keyDown(e) {　
     var realkey = String.fromCharCode(e.which);　
     var _this = $("#zimu span:eq(" + count + ")");
     if (realkey.toUpperCase() === _this.text()) {
-        if (count == 0) {
-            speed = new Date().getTime();
-        }
         _this.css({ "background-color": "green" });
         _this.addClass("active");
         count++;
@@ -237,6 +236,7 @@ function keyDown(e) {　
 
 //完成
 function finish() {
+    document.onkeydown = ""; 
     $(".progress .tarbar").stop();
     speed = new Date().getTime() - speed;
     $(".tip").css({
