@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>抢包子</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <link rel="stylesheet" type="text/css" src="animate.css">
+    <style>
+    html,
+    body {
+        -ms-touch-action: none;
+        /*background: #888888;*/
+        padding: 0;
+        border: 0;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    .content {
+        margin: 0 auto;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        text-align: center;
+    }
+
+    .zimu span {
+        background-color: #63614d;
+        border-radius: 50%;
+        font-size: 28px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: #fff;
+        margin: 0 5px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .progress {
+        width: 250px;
+        height: 25px;
+        background: #fff;
+        border-radius: 20px;
+        border: 1px solid #fff;
+        margin-top: 50px;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+        display: inline-block;
+        overflow: hidden;
+        text-align: left;
+    }
+
+    .progress .tarbar {
+        width: 100%;
+        height: 25px;
+        background: #63614d;
+        display: inline-block;
+    }
+
+    .count {
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .count span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 48px;
+        color: #63614d;
+    }
+
+    .tip {
+        opacity: 0;
+        font-size:24px;
+        color:#63614d;
+    }
+
+    .active {
+        animation: pulse .5s linear forwards;
+        -webkit-animation: pulse .5s linear forwards;
+    }
+
+    @-webkit-keyframes pulse {
+        from {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+        }
+
+        50% {
+            -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+        }
+
+        to {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+        }
+    }
+
+    @keyframes pulse {
+        from {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+        }
+
+        50% {
+            -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+        }
+
+        to {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="zimu" id="zimu">
+            <h1></h1>
+        </div>
+        <div class="progress">
+            <span class="tarbar"></span>
+        </div>
+        <p class="tip"></p>
+    </div>
+    <div class="count"><span>3</span></div>
+</body>
+<script id="letter" type="text/html">
+    {{each letters as value i}}
+    <span>{{value}}</span> {{/each}}
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+<script src="http://cdn.staticfile.org/artTemplate.js/3.0.1/template.js"></script>
+<script type="text/javascript">
+$(function(){
+    var count = 0;
+    var speed = 0;
+    init();
+    document.onkeydown = keyDown;
+})
+
+//初始化
+function init() {
+    $(".count span").text(3);
+    $(".count").show();
+    $("#zimu span").css({ "background-color": "#63614d" });
+    $(".tip").css({
+        "opacity": "0"
+    });
+    var num = 2;
+    var int = setInterval(function() {
+        $(".count span").text(num--);
+        if (num == -1) {
+            clearInterval(int);
+            count = 0;
+            speed = 0;
+            $(".count").hide();
+            randomLetter();
+            $(".progress .tarbar").width("100%");
+            progress();
+        }
+    }, 1000)
+}
+
+//随机生成字母
+function randomLetter() {
+    var data = {
+        "letters": []
+    };
+    var pool = ['Q', 'W', 'E', 'R', 'A', 'S', 'D']; //可选字母
+    var range = Math.floor(Math.random() * (7 - 2 + 1) + 2); //2-7之间
+    for (var i = 0; i < range; i++) {
+        data.letters.push(pool[Math.floor(Math.random() * pool.length)]);
+    }
+
+    var html = template('letter', data);
+    $('#zimu').html(html);
+}
+
+//进度条
+function progress() {
+    $(".progress .tarbar").animate({ width: "0%" }, 5000, "linear", function() {
+        //失败
+        $(".tip").css({"opacity":"1"});
+        $(".tip").html("骚年,手速不够啊");
+        setTimeout(function(){
+            init();
+        },2000);
+    })
+};
+
+//键盘事件
+function keyDown(e) {　
+    var keycode = e.which;　　
+    var realkey = String.fromCharCode(e.which);　
+    var _this = $("#zimu span:eq(" + count + ")");
+    if (realkey.toUpperCase() === _this.text()) {
+        if (count == 0) {
+            speed = new Date().getTime();
+        }
+        _this.css({ "background-color": "green" });
+        _this.addClass("active");
+        count++;
+        if (count == $("#zimu").children('span').length) {
+            //完成
+            finish();
+        }
+    } else {
+        //错误
+        count = 0;
+        $("#zimu span").removeClass("active");
+        $("#zimu span").css({ "background-color": "#dc0a0a" });
+        setTimeout(function() {
+            $("#zimu span").css({ "background-color": "#63614d" });
+        }, 500);
+    }
+}
+
+//完成
+function finish() {
+    $(".progress .tarbar").stop();
+    speed = new Date().getTime() - speed;
+    $(".tip").css({
+        "opacity": "1"
+    });
+    $(".tip").html("手速：<span></span>"+(speed/1000/count).toFixed(2) + "s");
+    setTimeout(function() {
+        init();
+    }, 2000)
+}
+</script>
+
+</html>
